@@ -1,0 +1,11 @@
+{
+  "name": "eloise-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "author": "Eli <epleaner@pivotal.io>",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
