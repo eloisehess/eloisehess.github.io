@@ -40,3 +40,30 @@ h5 {
     max-width: 250px;
     max-height: 250px;
 }
+
+header {
+ margin-bottom: 60px;
+}
+
+.header-grid {
+ display: grid;
+ grid-template-columns: auto auto;
+ grid-template-rows: auto auto;
+}
+
+.header-email {
+  text-align: end;
+}
+
+.header-email span {
+  vertical-align: middle;
+}
+
+.description {
+ margin-bottom: 40px;
+}
+
+.description > * {
+ margin-top: 0;
+ margin-bottom: 5px;
+}
