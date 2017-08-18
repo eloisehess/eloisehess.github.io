@@ -36,6 +36,14 @@ h5 {
  display: inline-block;
 }
 
+.gallery figure:first-of-type {
+ margin-left: 0px;
+}
+
+.gallery figure:last-of-type {
+ margin-right: 0px;
+}
+
 .gallery figure img {
     max-width: 250px;
     max-height: 250px;
@@ -66,4 +74,13 @@ header {
 .description > * {
  margin-top: 0;
  margin-bottom: 5px;
+}
+
+.featherlight.custom-featherlight .featherlight-content {
+  background: none;
+}
+
+.featherlight.custom-featherlight .featherlight-content .featherlight-close {
+  color: rgb(175, 175, 175);
+  background: none;
 }
