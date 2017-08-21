@@ -5,7 +5,22 @@ body {
     font-weight: lighter;
     text-transform: uppercase;
     /*background: #cdcdcd;*/
-    background-image: url(images/background.jpg);
+    /*background-image: url(images/background.jpg);*/
+}
+
+body::after {
+  content: "";
+  background: url(images/background.jpg) no-repeat center center;
+  background-size:cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+  -webkit-filter: grayscale(1); /* Old WebKit */
+  filter: grayscale(1);
 }
 
 h1 { font-size: 1.25em; }
@@ -81,10 +96,30 @@ header {
 }
 
 .featherlight.custom-featherlight .featherlight-content .featherlight-close {
-  color: rgb(65, 65, 65);
+  color: #BABDBD;
   background: none;
 }
 
 .featherlight.custom-featherlight:last-of-type {
  background: rgba(0,0,0,.8);
+}
+
+.featherlight-next:hover, .featherlight-previous:hover {
+ background: none;
+}
+
+.featherlight-next span, .featherlight-previous span {
+  display: inline-block;
+  font-size: 10px;
+  width: auto;
+      color: #BABDBD;
+      text-shadow: none;
+}
+
+.featherlight-next span {
+ right: -20px;
+}
+
+.featherlight-previous span {
+ left: -20px;
 }
