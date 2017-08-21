@@ -4,12 +4,13 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     text-transform: uppercase;
-    background: #cdcdcd;
+    /*background: #cdcdcd;*/
+    background-image: url(images/background.jpg);
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
+h1 { font-size: 1.25em; }
+h2 { font-size: 1em; }
+h3 { font-size: .9em; }
 h4 { font-size: .83em; }
 h5 { font-size: .75em; }
 
@@ -85,5 +86,5 @@ header {
 }
 
 .featherlight.custom-featherlight:last-of-type {
- background: rgba(0,0,0,.25);
+ background: rgba(0,0,0,.8);
 }
