@@ -1,7 +1,7 @@
 body {
     display: grid;
     margin: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inconsolata', monospace;
     font-weight: lighter;
     text-transform: uppercase;
     /*background: #cdcdcd;*/
