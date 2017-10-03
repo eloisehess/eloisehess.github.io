@@ -18,16 +18,27 @@ body::after {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;  
+  z-index: -1;
   -webkit-filter: grayscale(1); /* Old WebKit */
   filter: grayscale(1);
 }
 
-h1 { font-size: 1.25em; }
-h2 { font-size: 1em; }
-h3 { font-size: .9em; }
-h4 { font-size: .83em; }
-h5 { font-size: .75em; }
+@media (min-width: 320px) and (max-width: 480px) {
+  h1 { font-size: 10.25em; }
+  h2 { font-size: 1em; }
+  h3 { font-size: .9em; }
+  h4 { font-size: .83em; }
+  h5 { font-size: .75em; }
+}
+
+
+@media (min-width: 481px) {
+  h1 { font-size: 1.25em; }
+  h2 { font-size: 1em; }
+  h3 { font-size: .9em; }
+  h4 { font-size: .83em; }
+  h5 { font-size: .75em; }
+}
 
 h2 {
  margin-bottom: 0px;
