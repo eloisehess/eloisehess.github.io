@@ -23,8 +23,8 @@ body::after {
   filter: grayscale(1);
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  h1 { font-size: 10.25em; }
+@media only screen and (max-width: 768px) {
+  h1 { font-size: 2em; }
   h2 { font-size: 1em; }
   h3 { font-size: .9em; }
   h4 { font-size: .83em; }
@@ -32,12 +32,28 @@ body::after {
 }
 
 
-@media (min-width: 481px) {
+@media (min-width: 769px) {
   h1 { font-size: 1.25em; }
   h2 { font-size: 1em; }
   h3 { font-size: .9em; }
   h4 { font-size: .83em; }
   h5 { font-size: .75em; }
+}
+
+h1 {
+  display: flex;
+    align-items: center;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+  h3 {
+    justify-content: flex-end;
+  }
 }
 
 h2 {
@@ -75,14 +91,19 @@ header {
  margin-bottom: 25px;
 }
 
-.header-grid {
- display: grid;
- grid-template-columns: auto auto;
- grid-template-rows: auto auto;
+@media (min-width: 769px) {
+  .header-grid {
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto;
+  }
 }
 
-.header-email {
-  text-align: end;
+
+@media (min-width: 769px) {
+    .header-email {
+    text-align: end;
+  }
 }
 
 .header-email span {
