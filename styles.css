@@ -5,7 +5,7 @@ body {
     font-weight: lighter;
     text-transform: uppercase;
     background-image: url("images/background.jpg");
-    background-repeat: repeat-y;
+    background-repeat: repeat;
 }
 
 @media only screen and (max-width: 768px) {
