@@ -109,9 +109,11 @@
     $(document).ready(function() {
         $.featherlight.defaults.variant = 'custom-featherlight'
 
+        $.fx.off = true;
+
         $('.gallery-image').featherlightGallery({
-         galleryFadeIn: 0,          /* fadeIn speed when slide is loaded */
-  galleryFadeOut: 0,
+            galleryFadeIn: 0,          /* fadeIn speed when slide is loaded */
+            galleryFadeOut: 0,
             openSpeed: 100,
             closeSpeed: 100
         });
